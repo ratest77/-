@@ -1,0 +1,20 @@
+int main()
+{
+	int n=20,z = 19;
+	for (int i = 0; i <n;i++) {
+		for (int j = 0; j <n; j++) {
+			if (j == z) { cout << "#"; z--; }
+			if (j == i) { cout << "#"; }
+			if (j == n / 2+n%2) { cout << "#"; }
+			if (i == n / 2 + n % 2) { cout << "#"; }
+			else {
+				cout << " ";
+			}
+		}
+		cout<<endl;
+		
+	}
+	
+	system("pause");
+    return 0;
+}
